@@ -5,10 +5,12 @@ const cors = require('cors')
 const app = express()
 app.use(cors())
 app.use(express.json())
-const dbUrl = 'mongodb+srv://anithasriuk:<anithautira>@cluster0.tr87lby.mongodb.net/'
+const dbUrl ='mongodb+srv://anitha:anithautira@gmailclone.jguf4dm.mongodb.net/?retryWrites=true&w=majority'
 const client = new MongoClient(dbUrl)
+//const dbUrl = 'mongodb+srv://rohit10231:rohitkaranpujari@cluster0.kjynvxt.mongodb.net/?retryWrites=true&w=majority'
+//const client = new MongoClient(dbUrl)
 const port = 4000
-const bcrypt = require('bcrypt')
+//const bcrypt = require('bcrypt')
 
 // getting all users information
 app.get('/', async (req, res) => {
