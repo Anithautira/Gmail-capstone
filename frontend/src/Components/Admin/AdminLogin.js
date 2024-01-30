@@ -9,7 +9,7 @@ function AdminLogin() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/allRecipes')
+    axios.get('http://localhost:3000/allRecipes')
       .then((res) => {
         sessionStorage.setItem('allRecipes', JSON.stringify(res.data))
       })
